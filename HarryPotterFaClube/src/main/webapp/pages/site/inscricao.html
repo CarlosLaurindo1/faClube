@@ -20,7 +20,35 @@
             <a href="inscricao.html"><div>Inscrição</div></a>
         </nav>
         <section>
-
+            <div id="topo">
+                <div id="titulos">
+                <img src="../../imgs/envelope-solid.svg" alt="carta" class="carta">
+                <h2>Inscrição: </h2>
+                </div>
+            </div>
+            <p>Aqui você garante a sua carteirinha para entrar em hogwarts.</p>
+            <form name="frmInscricao" method="get" action="#">
+                <fieldset>
+                    <legend>Dados do Aluno: </legend>
+                    <label for="nome">Nome: </label>
+                    <input type="text" name="txtnome" id="nome">
+                    <label for="nome">Sexo: </label>
+                    <input type="radio" name="radiosexo" id="masculino">Masculino<br>
+                    <input type="radio" name="radiosexo" id="feminino">Feminino<br>
+                    <label for="nome">Data de Nascimento: </label>
+                    <input type="date" name="datanascimento" id="datanascimento">
+                    <label for="email">E-mail: </label>
+                    <input type="email" name="txtemail" id="email">
+                    <label for="telefone">Telefone: </label>
+                    <input type="t" name="txtemail" id="email">
+                </fieldset>
+                <fieldset>
+                    <legend>Termos de aceite: </legend>
+                    <input type="checkbox" name="termoaceite" value="aceito"/>Aceito fazer parte do Fã Clube<br>
+                    <button type="reset">Limpar</button>
+                    <button type="submit">Enviar</button>
+                </fieldset>
+            </form>
         </section>
         <footer>Copyright &copy; Escola Sistêmica 2023</footer>
     </body>
