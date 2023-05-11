@@ -1,20 +1,14 @@
-header{
-    margin-top: 0px;
+header {
+    margin-top: 0%;
     height: 110px;
     width: 100%;
     background-color: #f2eeac;
     position: fixed;
+    z-index: 999px;
 }
 
-header img{
-    float: left;
-    margin: 20px 0 0 30px;
-    height: 50px;
-    width: 50px;
-    margin: 50px;
-}
-
-header h1{
+header h1 {
+    top: 200;
     float: left;
     margin: 20px 0 0 30px;
     font-size: 50px;
@@ -22,119 +16,134 @@ header h1{
     font-family: 'harry-potter';
 }
 
-section{
-    clear: both;
-    min-height: 360px;
-    width: 100%;
-    margin-top: 0px;
+section {
+    top: 30px;
+    float: center;
+    margin: 110 0 0 110;
+    height: 110px;
+    width: 80%;
+    height: auto;
+    background: url(../imgs/background-video.mp4);
+    background-color: #f2eeac;
+    opacity: 0.6;
+    position: relative;
+    border-radius: 30px;
 }
 
-footer{
+footer {
     background-color: #f2eeac;
     width: 100%;
+    height: auto;
     color: #593a27;
     text-align: right;
     padding: 10px;
-    margin-bottom: 0px;
-    position: fixed;
+    margin: 0%;
+    position: absolute;
+    bottom: 0%;
 }
 
-section #topo{
+section #topo {
+    top: 20px;
     float: center;
     width: 900px;
     margin: 0px auto;
     height: 250px auto;
-    background-color: #A68F65;
 }
 
-.vassoura{
-    height: 125px;
+.vassoura {
+    float: center;
+    height: 110px;
     width: 125px;
     float: left;
+    margin-top: 1em;
 }
 
-.varinha{
-    height: 125px;
-    width: 125px;
-    float: right;
-}
-
-section #titulos{
-    float: left;
-    height: 250px;
+section #titulos {
+    float: center;
+    height: 110px;
     width: 650px;
-    margin: 0px auto;
+    margin: 1em auto;
 }
 
-section p{
+section p {
     clear: both;
     text-align: center;
-    margin: 10px 80px;
+    margin: 10px 0 0 10px;
 }
 
-.carta{
+section #corpo {
+    float: center;
+    height: auto;
+    width: auto;
+    font-size: 1.3em;
+}
+
+.carta {
     float: left;
     height: 50px;
     width: 50px;
     float: left;
 }
 
-h2{
+h2 {
     text-align: center;
     margin-top: 0px;
     margin-bottom: 10px;
     font-size: 50px;
 }
 
-h3{
+h3 {
     text-align: center;
     margin-top: 50px;
     font-size: 20px;
 }
 
-body{
+body {
     margin: 0 auto;
     font-family: 'calibri', sans-serif;
 }
 
-h1{
+h1 {
     font-family: 'harry-potter';
 }
 
-.inscricao{
+.inscricao {
     width: 300px;
     margin: 0px auto;
     font-weight: bold;
     margin-bottom: 10px;
 }
 
-.inscricao input, .inscricao text, .inscricao radio, .inscricao date{
+.inscricao input,
+.inscricao text,
+.inscricao radio,
+.inscricao date {
     width: 280;
     margin: 5px auto;
     padding: 5px 0;
 }
 
-.termo{
+.termo {
     width: 300px;
     margin: 0px auto;
     font-weight: bold;
     margin-bottom: 10px;
 }
 
-.termo button{
+.termo button {
     width: 300px;
     margin: 0px auto;
     font-weight: bold;
     margin-bottom: 10px;
 }
 
-nav a{
+nav a {
     color: white;
     text-decoration: none;
     text-align: center;
 }
 
-nav .opcao{
+nav .opcao {
     float: right;
     width: 12%;
     background-color: #8C2703;
@@ -155,8 +164,81 @@ nav .opcao{
 
 .banner video {
     position: fixed;
-    top: 50px;
-    left: 0;
-    object-fit: cover;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1000;
+    background-size: cover;
+}
+
+form {
+    position: fixed;
+    object-fit: fill;
     width: 100%;
+    height: 100%;
+}
+
+legend {
+    font-family: 'harry-potter';
+}
+
+.coluna1 {
+    width: 15%;
+    -webkit-width: 15%;
+    -ms-width: 15%;
+    height: 350px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -ms-border-radius: 30px;
+    background-color: #f2eeac;
+    opacity: 0.6;
+    padding: 1em 1em 1em 1em;
+    display: contents;
+    margin: 1em 1em;
+}
+
+.antes {
+    float: center;
+    padding-left: 20%;
+    width: 90px;
+    height: 90px;
+}
+
+.coluna2 {
+    float: center;
+    width: 15%;
+    height: 350px;
+    border-radius: 30px;
+    background-color: #f2eeac;
+    opacity: 0.6;
+    padding: 1em 1em 1em 1em;
+    margin: 1em 1em;
+}
+
+.coluna3 {
+    width: 15%;
+    height: 350px;
+    border-radius: 30px;
+    background-color: #f2eeac;
+    opacity: 0.6;
+    padding: 1em 1em 1em 1em;
+    margin: 1em 1em;
+}
+
+.coluna4 {
+    width: 15%;
+    height: 350px;
+    border-radius: 30px;
+    background-color: #f2eeac;
+    opacity: 0.6;
+    padding: 1em 1em 1em 1em;
+    margin: 1em 1em;
+}
+
+hr {
+    color: black;
+    width: 80%;
 }

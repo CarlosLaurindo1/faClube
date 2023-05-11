@@ -1,44 +1,59 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="description" content="Fã Clube Harry Potter">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="keywords" content="Harry Potter, Fã Clube, Filmes, Livros">
-        <meta name="viewpoint" content="width=device-widht, initial-scale=1.0">
-        <title>Harry Potter e o Clube Secreto</title>
-        <link rel="stylesheet" type="text/css" href="../../css/site.css">
-        <style>
-            @font-face {
-                font-family: 'harry-potter';
-                src: url("../../fontes/HARRP___.TTF") format('truetype');
-                font-weight: normal;
-                font-style: normal;
-            }
-            body{
-                cursor: url('../../imgs/broom-ball-solid.svg'), default
-            }
-            h1{
-                font-family: 'harry-potter', Times, serif;
-                font-size: 3em;
-                font-weight: normal;
-            }
-        </style>
-    </head>
-    <body>
-        <header>
-            <h1>Harry Potter e o Clube Secreto</h1>
-            <nav>
-                <a href="inscricao.html"><div class="opcao">Inscrição</div></a>
-                <a href="conteudo.html"><div  class="opcao">Mundo Bruxo</div></a>
-                <a href="../../index.html"><div class="opcao">Início</div></a>
-            </nav>
-        </header>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Fã Clube Harry Potter">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Harry Potter, Fã Clube, Filmes, Livros">
+    <meta name="viewpoint" content="width=device-widht, initial-scale=1.0">
+    <title>Harry Potter e o Clube Secreto</title>
+    <link rel="stylesheet" type="text/css" href="../../css/site.css">
+    <style>
+        @font-face {
+            font-family: 'harry-potter';
+            src: url("../../fontes/HARRP___.TTF") format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            cursor: url('../../imgs/broom-ball-solid.svg'), default
+        }
+
+        h1 {
+            font-family: 'harry-potter', Times, serif;
+            font-size: 3em;
+            font-weight: normal;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Harry Potter e o Clube Secreto</h1>
+        <nav>
+            <a href="inscricao.html">
+                <div class="opcao">Inscrição</div>
+            </a>
+            <a href="conteudo.html">
+                <div class="opcao">Mundo Bruxo</div>
+            </a>
+            <a href="../../index.html">
+                <div class="opcao">Início</div>
+            </a>
+        </nav>
+    </header>
+    </div>
+    <div class="banner">
+        <video autoplay muted loop>
+            <source src="../../imgs/background-video.mp4" type="video/mp4">
+        </video>
         <section>
             <div id="topo">
                 <div id="titulos">
-                <img src="../../imgs/envelope-solid.svg" alt="carta" class="carta">
-                <h2>Inscrição: </h2>
+                    <img src="../../imgs/envelope-solid.svg" alt="carta" class="carta">
+                    <h2>Inscrição: </h2>
                 </div>
             </div>
             <p>Aqui você garante a sua carteirinha para entrar em hogwarts.</p>
@@ -59,13 +74,16 @@
                 </fieldset>
                 <fieldset class="termo">
                     <legend>Termos de aceite: </legend>
-                    <input type="checkbox" name="termoaceite" value="aceito"/>Aceito fazer parte do Fã Clube<br>
+                    <input type="checkbox" name="termoaceite" value="aceito" />Aceito fazer parte do Fã Clube<br>
                     <button type="reset">Limpar</button>
                     <button type="submit">Enviar</button>
                 </fieldset>
             </form>
         </section>
-        
+
+
         <footer>Copyright &copy; Escola Sistêmica 2023</footer>
-    </body>
+    </div>
+</body>
+
 </html>
