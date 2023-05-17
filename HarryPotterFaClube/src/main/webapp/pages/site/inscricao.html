@@ -49,36 +49,38 @@
         <video autoplay muted loop>
             <source src="../../imgs/background-video.mp4" type="video/mp4">
         </video>
-        <section>
-            <div id="topo">
-                <div id="titulos">
-                    <img src="../../imgs/envelope-solid.svg" alt="carta" class="carta">
-                    <h2>Inscrição: </h2>
+        <section id="inscricao">
+            <div>
+                <div id="topo">
+                    <div id="titulos">
+                        <img src="../../imgs/envelope-solid.svg" alt="carta" class="carta">
+                        <h2>Seja membro: </h2>
+                    </div>
                 </div>
+                <p>Aqui você garante a sua carteirinha para entrar em hogwarts.</p>
+                <form name="frmInscricao" method="get" action="#">
+                    <fieldset class="inscricao">
+                        <legend>Dados do Aluno: </legend>
+                        <label for="nome">Nome: </label><br>
+                        <input type="text" name="txtnome" id="nome"><br><br>
+                        <label for="nome">Sexo: </label><br>
+                        <input type="radio" name="radiosexo" id="masculino">Masculino
+                        <input type="radio" name="radiosexo" id="feminino">Feminino<br><br>
+                        <label for="nome">Data de Nascimento: </label><br>
+                        <input type="date" name="datanascimento" id="datanascimento"><br><br>
+                        <label for="email">E-mail: </label><br>
+                        <input type="email" name="txtemail" id="email"><br><br>
+                        <label for="telefone">Telefone: </label><br>
+                        <input type="t" name="txtemail" id="email">
+                    </fieldset>
+                    <fieldset class="termo">
+                        <legend>Termos de aceite: </legend>
+                        <input type="checkbox" name="termoaceite" value="aceito" />Aceito fazer parte do Fã Clube<br>
+                        <button type="reset">Limpar</button>
+                        <button type="submit">Enviar</button>
+                    </fieldset>
+                </form>
             </div>
-            <p>Aqui você garante a sua carteirinha para entrar em hogwarts.</p>
-            <form name="frmInscricao" method="get" action="#">
-                <fieldset class="inscricao">
-                    <legend>Dados do Aluno: </legend>
-                    <label for="nome">Nome: </label><br>
-                    <input type="text" name="txtnome" id="nome"><br><br>
-                    <label for="nome">Sexo: </label><br>
-                    <input type="radio" name="radiosexo" id="masculino">Masculino
-                    <input type="radio" name="radiosexo" id="feminino">Feminino<br><br>
-                    <label for="nome">Data de Nascimento: </label><br>
-                    <input type="date" name="datanascimento" id="datanascimento"><br><br>
-                    <label for="email">E-mail: </label><br>
-                    <input type="email" name="txtemail" id="email"><br><br>
-                    <label for="telefone">Telefone: </label><br>
-                    <input type="t" name="txtemail" id="email">
-                </fieldset>
-                <fieldset class="termo">
-                    <legend>Termos de aceite: </legend>
-                    <input type="checkbox" name="termoaceite" value="aceito" />Aceito fazer parte do Fã Clube<br>
-                    <button type="reset">Limpar</button>
-                    <button type="submit">Enviar</button>
-                </fieldset>
-            </form>
         </section>
 
 
