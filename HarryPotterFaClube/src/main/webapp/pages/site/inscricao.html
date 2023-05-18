@@ -62,30 +62,31 @@
                     <fieldset class="inscricao">
                         <legend>Dados do Aluno: </legend>
                         <label for="nome">Nome: </label><br>
-                        <input type="text" name="txtnome" id="nome"><br><br>
+                        <input id="caixa" type="text" name="txtnome" id="nome"><br><br>
                         <label for="nome">Sexo: </label><br>
                         <input type="radio" name="radiosexo" id="masculino">Masculino
                         <input type="radio" name="radiosexo" id="feminino">Feminino<br><br>
                         <label for="nome">Data de Nascimento: </label><br>
-                        <input type="date" name="datanascimento" id="datanascimento"><br><br>
+                        <input id="caixa" type="date" name="datanascimento" id="datanascimento"><br><br>
                         <label for="email">E-mail: </label><br>
-                        <input type="email" name="txtemail" id="email"><br><br>
+                        <input id="caixa" type="email" name="txtemail" id="email"><br><br>
                         <label for="telefone">Telefone: </label><br>
-                        <input type="t" name="txtemail" id="email">
+                        <input id="caixa" type="t" name="txtemail" id="email">
                     </fieldset>
                     <fieldset class="termo">
                         <legend>Termos de aceite: </legend>
-                        <input type="checkbox" name="termoaceite" value="aceito" />Aceito fazer parte do Fã Clube<br>
-                        <button type="reset">Limpar</button>
-                        <button type="submit">Enviar</button>
+                        <input type="checkbox" name="termoaceite" value="aceito" />Aceito fazer parte do Clube<br>
+                        <tr><button id="primary" type="reset">Limpar</button></tr>
+                        <tr><button id="secondary" type="submit">Enviar</button></tr>
                     </fieldset>
                 </form>
             </div>
         </section>
 
 
-        <footer>Copyright &copy; Escola Sistêmica 2023</footer>
+
     </div>
+    <footer>Copyright &copy; Escola Sistêmica 2023</footer>
 </body>
 
 </html>

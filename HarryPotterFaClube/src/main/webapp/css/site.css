@@ -1,11 +1,10 @@
 header {
     margin-top: 0%;
-    margin-left: -1.2%;
     height: 110px;
     width: 100%;
     background-color: #f2eeac;
     position: fixed;
-    z-index: 999px;
+    z-index: 999;
 }
 
 header h1 {
@@ -19,6 +18,7 @@ header h1 {
 
 section {
     top: 30px;
+    opacity: 0.9;
     float: center;
     margin: 110 0 0 110;
     height: 110px;
@@ -26,12 +26,13 @@ section {
     height: auto;
     background: url(../imgs/background-video.mp4);
     background-color: #f2eeac;
-    opacity: 0.6;
     position: relative;
     border-radius: 30px;
+    margin-top: 150px;
+    margin-bottom: 100px;
 }
 
-#inscricao{
+#inscricao {
     top: 12%;
     margin-top: 180px;
     margin-bottom: 150px;
@@ -42,39 +43,34 @@ section {
     height: auto;
     background: url(../imgs/background-video.mp4);
     background-color: #f2eeac;
-    opacity: 0.6;
+    opacity: 0.9;
     position: relative;
-    border-radius: 30px; 
+    border-radius: 30px;
 }
 
-section form{
-    top: 30px;
-    float: center;
-    margin: 110 0 0 110;
+
+section form {
+    top: auto;
+    margin: 50 0 0 110;
     height: 110px;
     width: 80%;
     height: auto;
     background: url(../imgs/background-video.mp4);
     background-color: #f2eeac;
-    opacity: 0.8;
     position: relative;
     border-radius: 30px;
-    overflow-y: visible;
 }
 
 footer {
     background-color: #f2eeac;
-    width: 97.4%;
-    -webkit-width: 97.4%;
+    width: 100%;
     height: auto;
     color: #593a27;
-    text-align: right;
+    text-align: center;
+    margin-right: 2px;
     padding: 10px;
-    margin: 0%;
-    position: absolute;
-    margin-bottom: 0%;
+    position: fixed;
     bottom: 0%;
-    -webkit-margin-bottom: 0%;
 }
 
 section #topo {
@@ -123,9 +119,11 @@ section #corpo {
 
 h2 {
     text-align: center;
+    color: #593a27;
     margin-top: 0px;
     margin-bottom: 10px;
     font-size: 50px;
+    font-family: 'harry-potter';
 }
 
 h3 {
@@ -148,12 +146,25 @@ h1 {
     margin: 0px auto;
     font-weight: bold;
     margin-bottom: 10px;
+    margin: 10px 100px 10px 100px;
+    float: left;
 }
 
-.inscricao input,
+#caixa,
 .inscricao text,
-.inscricao radio,
 .inscricao date {
+    width: 280px;
+    height: 20px;
+    margin: 5px auto;
+    padding: 5px 0;
+    border-radius: 15;
+    -webkit-border-radius: 15;
+    -moz-border-radius: 15;
+    -ms-border-radius: 15;
+    -o-border-radius: 15;
+}
+
+.inscricao radio {
     width: 280;
     margin: 5px auto;
     padding: 5px 0;
@@ -164,6 +175,7 @@ h1 {
     margin: 0px auto;
     font-weight: bold;
     margin-bottom: 10px;
+    float: right;
 }
 
 .termo button {
@@ -191,12 +203,17 @@ nav .opcao {
 
 .banner {
     width: 100%;
-    height: 100vh;
-    overflow: hidden;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow-y: scroll
+    z-index: -1;
+}
+
+#corpo {
+    position: relative;
+    top: 30%;
+    margin: 50px;
 }
 
 .banner video {
@@ -216,6 +233,7 @@ form {
     object-fit: fill;
     width: 100%;
     height: 100%;
+    margin: 50px;
 }
 
 legend {
@@ -223,18 +241,16 @@ legend {
 }
 
 .coluna {
-    width: 15%;
-    -webkit-width: 15%;
-    -ms-width: 15%;
-    height: 350px;
+    width: 200px;
+    height: 400px;
     border-radius: 30px;
     -webkit-border-radius: 30px;
     -ms-border-radius: 30px;
     background-color: #f2eeac;
-    opacity: 0.8;
     padding: 1em 1em 1em 1em;
     display: contents;
     margin: 1em 1em;
+    margin-top: 50px;
 }
 
 .coluna p {
@@ -251,4 +267,32 @@ legend {
 hr {
     color: black;
     width: 80%;
+}
+
+fieldset {
+    font-family: 'harry-potter';
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+button {
+    float: left;
+    width: 90px;
+    height: 30px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+#primary{
+    background-color: #f2eeac;
+}
+
+#secondary{
+    background-color: #8C2703;
 }
