@@ -9,7 +9,7 @@
     <meta name="viewpoint" content="width=device-widht, initial-scale=1.0">
     <title>Harry Potter e o Clube Secreto</title>
     <link rel="stylesheet" type="text/css" href="../../css/site.css">
-    <script>
+    <script src="../../js/script.js">
         function validaAceite(value) {
             var enviarButton = document.getElementsByName("enviar")[0];
             enviarButton.disabled = !value;
@@ -69,15 +69,15 @@
                         <legend>Dados do Aluno: </legend>
                         <label for="nome">Nome: </label><br>
                         <input id="caixa" type="text" name="txtnome" id="nome"><br><br>
-                        <label for="nome">Sexo: </label><br>
+                        <label for="sexo" name="rdsexo">Sexo: </label><br>
                         <input type="radio" name="radiosexo" id="masculino">Masculino
                         <input type="radio" name="radiosexo" id="feminino">Feminino<br><br>
-                        <label for="nome">Data de Nascimento: </label><br>
+                        <label for="datanascimento">Data de Nascimento: </label><br>
                         <input id="caixa" type="date" name="datanascimento" id="datanascimento"><br><br>
                         <label for="email">E-mail: </label><br>
                         <input id="caixa" type="email" name="txtemail" id="email"><br><br>
-                        <label for="telefone">Telefone: </label><br>
-                        <input id="caixa" type="t" name="txtemail" id="email">
+                        <label for="fone">Telefone: </label><br>
+                        <input id="caixa" type="text" name="txtfone" id="email">
                     </fieldset>
                     <fieldset class="termo">
                         <legend>Termos de aceite: </legend>
