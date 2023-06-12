@@ -13,17 +13,18 @@ function validaCamposInscricao(){
         return false;
     }
 
-    var dataNascimento = document.frmInscricao.datanascimento.value;
-    var expRegNasc = new RegExp ("^[0-3]{1}[0-9]{1}[/]{1}[0-1]{1}[0-9]{1}[/]{1}[0-2]{1}[0-9]{3}$");
+    //rever!!!!
+    //var dataNascimento = document.frmInscricao.datanascimento.value;
+    //var expRegNasc = new RegExp ("^[0-3]{1}[0-9]{1}[/]{1}[0-1]{1}[0-9]{1}[/]{1}[0-2]{1}[0-9]{3}$");
 
-    if(!expRegNasc.test(dataNascimento)){
-        alert("Preencha o campo Data de Nascimento corretamente");
+    //if(!expRegNasc.test(dataNascimento)){
+        //alert("Preencha o campo Data de Nascimento corretamente");
         //rever o regexp deste caso
-        document.frmInscricao.dataNascimento.focus();
-    }
+        //document.frmInscricao.dataNascimento.focus();
+    //}
 
     var mail = document.frmInscricao.txtemail.value;
-    var expRegMail = new RegExp("^[a-z1-9]{4,}[@]{1}[a-z1-9]{2,}[.]{1}[a-z]{2,}$");
+    var expRegMail = new RegExp("^[a-z0-9]{4,}[@]{1}[a-z0-9]{2,}[.]{1}[a-z]{2,}$");
 
     if (!expRegMail.test(mail)) {
         alert("Preencha o campo E-mail corretamente.");
